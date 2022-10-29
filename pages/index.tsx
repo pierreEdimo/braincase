@@ -1,11 +1,13 @@
 import type {NextPage} from 'next'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/home.module.css'
 import NestedLayout from "../components/nestedLayout";
 import Image from "next/image";
 import bottomShape from "../public/images/home-bottom-shape.png";
 import AppHeaderContent from "../components/appHeader";
 import homeFont from "../public/images/home-font.png";
+import Card from "../components/card";
+import about from "../public/images/about.jpg";
 
 const Home: NextPage = () => {
     return (
@@ -23,7 +25,7 @@ const Home: NextPage = () => {
                 <NestedLayout>
                     <div className={styles.centerDiv}>
                         <div className={styles.colLeft}>
-                            <h4 className={styles.intro}>IT Solutions & Business Services Company</h4>
+                            <h4 className={styles.intro}>IT Läsungen & Business Leistungen Unternehmen</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt
                                 ut labore et dolore magna aliqua, magna aliqua. ipsum is simply dummy text of the
@@ -40,11 +42,38 @@ const Home: NextPage = () => {
                 </div>
             </header>
 
-            <NestedLayout>
-                <main className={styles.mainBody}>
-                    <p>Hello</p>
-                </main>
-            </NestedLayout>
+
+            <main className={styles.mainBody}>
+                <NestedLayout>
+                    <section className={styles.solutionContainer}>
+                        <h6 className={styles.centeredSmallTitle}>Was wir anbieten</h6>
+                        <h4 className={styles.centeredTitle}>IT Lösungen</h4>
+                        <div className={styles.gridSystem}>
+                            <Card titel="Test"/>
+                            <Card titel="Docker"/>
+                            <Card titel="IT"/>
+                            <Card titel="Java"/>
+                            <Card titel="Angular"/>
+                            <Card titel="Spring"/>
+                        </div>
+                    </section>
+                    <section className={styles.aboutContainer}>
+                        <div className={styles.row}>
+                            <div className={styles.col1}>
+                                <h6 className={styles.smallTitle}>Über unsere Firma</h6>
+                                <h4 className={styles.title}>Providing your business with a quality IT service is our
+                                    passion.</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua enim ad minim veniam, nostrud</p>
+                            </div>
+                            <div className={styles.col2}>
+                                <Image src={about} alt="about png"/>
+                            </div>
+                        </div>
+                    </section>
+                </NestedLayout>
+            </main>
+
         </div>
     )
 }

@@ -1,0 +1,96 @@
+.appHeader {
+    height: 100vh;
+    width: 100%;
+    background-color: #cadea7;
+}
+
+.bottomDiv {
+    position: absolute;
+    bottom: -5px;
+}
+
+.centerDiv {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    gap: 20px;
+    width: 1090px;
+}
+
+.colLeft {
+    width: 50%;
+}
+
+.colRight {
+    width: 50%;
+}
+
+.intro {
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+
+.mainBody {
+    margin: 40px 0 40px 0;
+}
+
+.gridSystem {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.centeredSmallTitle {
+    text-align: center;
+    color: #FF9800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.smallTitle {
+    margin-top: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #98bb60;
+}
+
+.title{
+    font-size: 28px;
+}
+
+.centeredTitle {
+    font-size: 28px;
+    text-align: center;
+}
+
+.solutionContainer {
+    margin-bottom: 120px;
+}
+
+.aboutContainer {
+    margin-top: 120px;
+}
+
+.row {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.col1{
+    width: 55%;
+}
+
+.col2{
+    width: 40%;
+}
