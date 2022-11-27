@@ -1,0 +1,18 @@
+.footer {
+    height: 300px;
+    width: 100%;
+    background-color: #cadea7;
+    padding: 20px 0 20px 0;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+
+.col{
+    width: 25%;
+}

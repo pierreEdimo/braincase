@@ -8,6 +8,15 @@
     bottom: -5px;
 }
 
+.customButton {
+    background-color: #98bb60;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
 .centerDiv {
     margin: 0;
     position: absolute;
@@ -41,8 +50,8 @@
 
 .gridSystem {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
 }
 
 .centeredSmallTitle {
@@ -61,7 +70,7 @@
     color: #98bb60;
 }
 
-.title{
+.title {
     font-size: 28px;
 }
 
@@ -75,7 +84,11 @@
 }
 
 .aboutContainer {
-    margin-top: 120px;
+    margin: 120px 0 120px 0;
+}
+
+.vertrauensContainer {
+    margin: 120px 0 120px 0;
 }
 
 .row {
@@ -86,10 +99,40 @@
     justify-content: space-between;
 }
 
-.col1{
+.col1 {
     width: 55%;
 }
 
-.col2{
+.col2 {
     width: 40%;
+}
+
+.gridImages{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contactContainer{
+    margin: 120px 0 120px 0;
+}
+
+.contactContainer p{
+    text-align: center;
+}
+
+.geistGrid{
+    display: flex;
+    gap: 60px;
 }
